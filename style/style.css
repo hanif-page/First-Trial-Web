@@ -51,6 +51,10 @@ table {
 
 /* ---------- Style ---------- */
 
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 body{
 
@@ -58,10 +62,47 @@ body{
     background-image: linear-gradient(to bottom, darkgrey, whitesmoke)
 }
 
+.top-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+    background-color: lightskyblue;
+    /* border-bottom: 5px solid sandybrown; */
+    z-index: 999;
+
+}
+
+.top-bar h1 {
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    padding: 15px;
+}
+
+.top-bar-menu {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    left: 0;
+    height: 10px;
+    background-color: sandybrown;
+    z-index: 9999;
+}
+
+.top-bar-menu:hover {
+    height: 40px;
+}
+
 .container {
-    width: 800px;
-    margin: auto;
+    width: 960px;
+    margin: 110px auto;
     background-color: white;
+    position: relative; 
+    border-radius: 20px;
+
 }
 
 .header {
@@ -94,47 +135,51 @@ body{
 .header a:hover{
     background-color: lightskyblue;
     color: white;
+    border-radius: 10px;
 
 }
 
 /* the image selector */
 .hero {
-    height: 280px;
+    height: 320px;
     background-image: url(../img/keyboard.png);
     background-size: cover;
-    background-position: 0 -100px;
-    border-top: 5px solid blue;
-    border-bottom: 5px solid blue;
+    background-position: 0 -150px;
+    border-top: 5px solid sandybrown;
+    border-bottom: 5px solid sandybrown;
 
 }
 
 /* selector untuk bagian inti/content */
-.content {
+.main {
     padding: 20px;
+    width: 600px;
+    box-sizing: border-box;
+    float: left;
 }
 
-/* selector untuk judul artikel, di dalam bagian content */
-.content h2 {
+/* selector untuk judul artikel, di dalam bagian main */
+.main h2 {
     font-weight: bold;
     font-size: 28px;
 }
 
-/* selector untuk class penulis, di dalam bagian content */
-.content .penulis {
+/* selector untuk class penulis, di dalam bagian main */
+.main .penulis {
     font-size: 12px;
     margin-bottom: 10px;
 
 }
 
-/* selector untuk link nama penulis, di dalam bagian class penulis, di dalam bagian class content */
-.content .penulis a {
+/* selector untuk link nama penulis, di dalam bagian class penulis, di dalam bagian class main */
+.main .penulis a {
     text-decoration: none;
     color:chocolate;
 
 }
 
-/* selector saat mouse diatas link nama penulis, di dalam bagian class penulis, di dalam bagian class content  */
-.content .penulis a:hover {
+/* selector saat mouse diatas link nama penulis, di dalam bagian class penulis, di dalam bagian class main  */
+.main .penulis a:hover {
     background-color: grey;
     color: white;
     padding: 3px;
@@ -147,12 +192,182 @@ body{
     font-size: 15px;
 }
 
+/* sidebar */
+.sidebar {
+    width: 300px;
+    float: right;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    font-weight:bold;
+    color: rgb(48, 48, 48);
+    margin-bottom: 5px;
+}
+
+.sidebar .photo {
+    width: 100px;
+    height: 100px;
+    background-image: url(../img/unknownPict.png);
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.sidebar .photo:hover{
+    background-color: rgba(165, 165, 165, 0.5);
+    border-radius: 10px;
+}
+
+.sidebar p {
+    font: 12px/18px arial;
+    text-indent: 20px;
+    
+}
+
+.contact {
+    background-image: linear-gradient(to bottom,white,  rgba(183, 183, 183, 0.866));
+    padding-left: 10px;
+}
+
+.user_form {
+    width: 480px;
+    margin: 10px;
+    float: left;    
+}
+
+.user_form {
+    margin-left: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+
+}
+
+.user_form h1 {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 3px;
+    margin-bottom: 10px;
+    color: saddlebrown;
+}
+
+.user_form form .name_email {
+    width: 350px;
+    height: 30px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    text-indent: 5px;
+
+}
+
+.user_form form #message_input {
+    border: 1px solid black;
+    width: 500px;
+    height: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 6px;
+    text-indent: 5px;
+
+}
+
+.user_form form .submit_button {
+    font-size: 15px;
+    font-weight: bold;
+    width: 80px;
+    height: 30px;
+    color:rgb(87, 87, 87);
+    border-radius: 10px;
+}
+
+.user_form form .submit_button:hover {
+    background-color: rgb(87, 87, 87);
+    color: white;
+}
+
+
+.bio {
+    width: 400px;
+    float: right;
+    position: relative;
+    bottom: -215px;
+    text-align: center;
+}
+
+.bio h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 3px;
+    margin-bottom: 10px;
+    color:saddlebrown;
+    position: relative;
+    left: -20px;
+
+}
+
+.bio a {
+    text-decoration: none;
+    margin-right: 40px;
+}
+
+.bio .instagram-logo {
+    width: 64px;
+    height: 64px;
+    background-image: url(../img/instagram-ribbon-icon-8\ \(64.64\).png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    display: inline-block;
+}
+
+/* ini awalnya dibuat untuk logo instagram, cuma dikira" kyknya kurang bagus */
+/* .bio .instagram-logo:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 25%;
+    background-size: cover;
+} */
+
+.bio .github-logo {
+    width: 64px;
+    height: 64px;
+    background-image: url(../img/github-logo\(64.64\).png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    display: inline-block;
+}
+
+.bio .github-logo:hover {
+    background-color: white;
+    border-radius: 50%;
+}
+
+.bio .email-logo {
+    width: 64px;
+    height: 48px;
+    background-image: url(../img/gmail-logo-16\ \(64.48\).png);
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+
+}
+
+/* ini awalnya dibuat untuk logo email, cuma dikira" kyknya kurang bagus */
+/* .bio .email-logo:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10%;
+} */
+
 /* selector untuk bagian footer (class footer) */
 .footer {
-    height: 50px;
+    height: 80px;
     background-color: #333;
-    padding: 10px;
-    padding-top: 25px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
 
 }
 
@@ -161,7 +376,37 @@ body{
     color: #eaeaea;
     text-align: center;
     font-size: 12px;
+    line-height: 80px;
 
 }
 
 
+
+/* CLEAR FIX */
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+ .cf:before,
+ .cf:after {
+     content: " "; /* 1 */
+     display: table; /* 2 */
+ }
+ 
+ .cf:after {
+     clear: both;
+ }
+ 
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+ .cf {
+     *zoom: 1;
+ }

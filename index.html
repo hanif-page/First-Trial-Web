@@ -8,8 +8,29 @@
     <link rel="stylesheet" href="style/style.css">
 
 </head>
+
+<!-- Make the link on the header, can be pressed real
+     etc. Make the contact section -->
+
 <body>
     
+    <div class="top-bar">
+        <h1>Welcome User</h1>
+    </div>
+
+    <div class="top-bar-menu cf">
+
+        <!-- rencana, membuat top-bar menu agar dapat gampang mengakses linknya -->
+        <!-- <ul>
+            <li><a href="#content">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">products</a></li>
+            <li><a href="">services</a></li>
+            <li><a href="#contact">contact</a></li>
+
+        </ul> -->
+    </div>
+
     <!-- Dasar bagian dari seluruh konten -->
     <div class="container">
 
@@ -19,15 +40,16 @@
             <!-- untuk judul -->
             <h1 class="judul">MyWebsite</h1>
 
-            <!-- untuk bagian link informasi -->
-            <ul>
-                <li><a href="">home</a></li>
-                <li><a href="">about</a></li>
-                <li><a href="">products</a></li>
-                <li><a href="">services</a></li>
-                <li><a href="">contact</a></li>
+        <!-- untuk bagian link informasi -->
+        <ul>
+            <li><a href="#content">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">products</a></li>
+            <li><a href="">services</a></li>
+            <li><a href="#contact">contact</a></li>
 
-            </ul>
+        </ul>
+
         </div>
 
         <!-- bagian gambar/banner -->
@@ -36,16 +58,65 @@
         </div>
 
         <!-- bagian inti web -->
-        <div class="content">
+        <div class="content cf">
 
-            <h2>Judul Artikel</h2>
-            <p class="penulis">Ditulis Oleh <a href="">AmmarHanif</a>. Pada 9 Februari 2021.</p>
-        
-            <p class="inti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis eveniet minus labore fuga. Tempora, labore? Deserunt doloremque iusto rem quam rerum quas praesentium dolor laudantium, mollitia tempora dicta, perferendis exercitationem.</p>
+            <div class="main">
 
-            <p class="inti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam pariatur vitae nobis non natus dolore praesentium laudantium? Non tempore in assumenda nam fuga mollitia alias rem a voluptate ullam quaerat hic corrupti dolorem sunt esse autem, quia nesciunt excepturi earum aspernatur doloribus officia id architecto! Blanditiis excepturi eius aperiam fugit possimus itaque eaque, dicta quae, est, illo reprehenderit. Suscipit impedit placeat cum? Mollitia eum qui nihil cupiditate laudantium. Itaque impedit eum a minima voluptates et facilis sint atque amet porro. Omnis voluptatibus iste quisquam quasi eaque eum. Earum voluptatibus consequuntur aliquam magni dignissimos consequatur blanditiis harum error praesentium! Cupiditate, temporibus?</p>
+                <h2>Judul Artikel</h2>
+                <p class="penulis">Ditulis Oleh <a href="">AmmarHanif</a>. Pada 9 Februari 2021.</p>
+            
+                <p class="inti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis eveniet minus labore fuga. Tempora, labore? Deserunt doloremque iusto rem quam rerum quas praesentium dolor laudantium, mollitia tempora dicta, perferendis exercitationem.</p>
+    
+                <p class="inti">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam pariatur vitae nobis non natus dolore praesentium laudantium? Non tempore in assumenda nam fuga mollitia alias rem a voluptate ullam quaerat hic corrupti dolorem sunt esse autem, quia nesciunt excepturi earum aspernatur doloribus officia id architecto! Blanditiis excepturi eius aperiam fugit possimus itaque eaque, dicta quae, est, illo reprehenderit. Suscipit impedit placeat cum? Mollitia eum qui nihil cupiditate laudantium. Itaque impedit eum a minima voluptates et facilis sint atque amet porro. Omnis voluptatibus iste quisquam quasi eaque eum. Earum voluptatibus consequuntur aliquam magni dignissimos consequatur blanditiis harum error praesentium! Cupiditate, temporibus?</p>
+    
+                <p class="inti">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio recusandae tempore dolor rem placeat nesciunt molestias officiis! Ut nesciunt recusandae accusamus pariatur neque fugit quod illum facilis. Aut velit eveniet suscipit adipisci. Quo vitae quae impedit dicta culpa. Ex ducimus aut sed quia facilis velit, voluptates sunt nobis iure optio dicta alias consectetur ad sint ipsum iste commodi ipsam voluptas fugiat quis incidunt deserunt porro dignissimos animi. Explicabo rerum reprehenderit nesciunt eligendi quibusdam velit debitis quo nisi, molestias vel quia?</p>
 
-            <p class="inti">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio recusandae tempore dolor rem placeat nesciunt molestias officiis! Ut nesciunt recusandae accusamus pariatur neque fugit quod illum facilis. Aut velit eveniet suscipit adipisci. Quo vitae quae impedit dicta culpa. Ex ducimus aut sed quia facilis velit, voluptates sunt nobis iure optio dicta alias consectetur ad sint ipsum iste commodi ipsam voluptas fugiat quis incidunt deserunt porro dignissimos animi. Explicabo rerum reprehenderit nesciunt eligendi quibusdam velit debitis quo nisi, molestias vel quia?</p>
+            </div>
+
+            <div class="sidebar">
+                <h3>Tentang Penulis</h3>
+                <div class="photo">
+                    <!-- image (setting in css) -->
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam optio illum illo earum, ipsum facilis dolorem accusantium placeat. Iure itaque voluptatibus nesciunt sunt doloremque delectus ex ipsam dolore temporibus recusandae numquam adipisci, tempora ipsum corrupti praesentium dolorum dignissimos sed earum illo esse labore ab illum nemo ad? Eum, cum reiciendis!</p>
+                
+            </div>
+
+
+        </div>
+
+        <div class="contact cf" id="contact">
+            
+            <!-- sebelah kiri web -->
+            <div class="user_form">
+
+                <h1>Contact Us !</h1>
+
+                <form action="">
+                    <input class="name_email" type="text" name="" placeholder="Full Name" id="name_input">
+                    <br>
+                    <input class="name_email" type="text" name="" placeholder="Email" id="email_input">
+                    <br>
+                    <textarea name="" id="message_input" placeholder="Your Message" ></textarea>
+                    <br>
+                    <button class="submit_button">Submit</button>
+                </form>
+
+            </div>
+
+            <div class="bio">
+
+                <h1>Find Me On</h1>
+
+                <!-- membuat find us on, ada instagram, github, email, dan no telp. Rencananya, posisi horizontal semua -->
+                <a class="instagram-logo" href="https://www.instagram.com/haa.niiff/" target="_blank"> Instagram </a>
+                
+                <a class="github-logo" href="https://github.com/hanif-sudoapt" target="_blank">Github</a>
+                <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+                
+                <a class="email-logo" href="mailto:amrhanif15@gmail.com" target="_blank">Email</a>
+                
+            </div>
 
         </div>
 
