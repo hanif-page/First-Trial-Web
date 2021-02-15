@@ -365,8 +365,8 @@ body{
     height: 80px;
     background-color: #333;
     box-sizing: border-box;
-    border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 
 }
 
